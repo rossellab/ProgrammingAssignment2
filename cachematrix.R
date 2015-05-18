@@ -24,11 +24,12 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-# The cacheSolve function gets the input matrix using the get function as
-# defined above. It then computes the inverse of the input matrix and stores it 
-# using setinverse, as defined above. It first checks if this has been done
-# before, using getinverse as defined above, and in that case returns the stored
-# value and a message.
+# When passed a list of functions created by makeCacheMatrix, the cacheSolve
+# function gets the input matrix using the get function as defined above. It
+# then computes the inverse of the input matrix and stores it using setinverse,
+# as defined above. It first checks if this has been done before, using
+# getinverse as defined above, and in that case returns the stored value and a
+# message.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
